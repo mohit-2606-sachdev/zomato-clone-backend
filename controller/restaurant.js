@@ -21,7 +21,6 @@ exports.getPageByNumber = (req, res) => {
     }
 
     if (req.body.body.lcost && req.body.body.hcost) {
-        console.log("inside")
         filter.cost = {$gt: req.body.body.lcost,$lt: req.body.body.hcost}
     }
 
