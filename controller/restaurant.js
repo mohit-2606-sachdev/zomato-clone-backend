@@ -21,7 +21,7 @@ exports.getPageByNumber = (req, res) => {
     }
 
     if (req.body.body.lcost && req.body.body.hcost) {
-        filter.cost = { $gt: req.body.body.lcost, $lt: req.body.body.hcost }
+        filter.cost = {$lt: req.body.body.hcost}
     }
 
     if (req.body.body.cuisine && req.body.body.cuisine.length>0){

@@ -7,7 +7,6 @@ const Transaction = require('../models/Transaction')
 
 exports.getCheckout =async (req,res) =>{
 
-  console.log(req.body.body)
   var options = {
     amount: req.body.body * 100,
     currency: "INR",
